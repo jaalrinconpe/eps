@@ -27,7 +27,7 @@ public class AfiliadoController {
 	}
 	
 	@GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Afiliado buscarPorId(@PathParam("id") Long id) {
+	public Afiliado buscarPorId(@PathVariable("id") Long id) {
 		return afiliadoService.buscarPorId(id);
 	}
 	
